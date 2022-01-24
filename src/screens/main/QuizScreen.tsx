@@ -17,12 +17,6 @@ const QuizScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   const [answer, setAnswer] = useState('')
   const [allowAnswer, setAllowAnswer] = useState<boolean>(false)
   const [showBottomSheet, setShowBottomSheet] = useState<boolean>(false)
-  // const [canChangeAnswer, setCanChangeAnswer] = useState<boolean>(false)
-  // const quizCollection = firestore().collection('quiz-1');
-
-  // useEffect(() => {
-  //   userData()
-  // }, [])
 
   useEffect(() => {
     const subscriber = firestore()
